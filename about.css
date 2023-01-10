@@ -1,4 +1,5 @@
 *{
+<<<<<<< HEAD
     padding: 600;
     margin: 500;
     font-family: 'Work Sans', sans-serif;
@@ -39,3 +40,10 @@ nav ul li a:hover{
     color: #f9004d;
     transition: .4s;
 }
+=======
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+>>>>>>> a618804784f82a190944be4c61ae7a65e9b3e3fc
