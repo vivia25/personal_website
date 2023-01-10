@@ -1,0 +1,41 @@
+*{
+    padding: 600;
+    margin: 500;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 55%;
+    padding-right: 0%;
+}
+
+h1{
+    padding-left: 70%;
+    padding-right: 0%;
+}
+.about{
+    width: 50%;
+    padding: 20px 0px;
+    background-color: white;
+}
+
+nav ul li
+{
+    list-style-type:none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+/*
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+*/
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
+}
