@@ -58,8 +58,50 @@ header ul li a:hover
     color: #fff;
 }
 
-.nyc {
-    max-width: 100%;
+.container {
+    height: 100vh;
+    /*max-width: 100%;
     max-height: 100%;
     margin: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: cover;*/
+}
+
+.container img {
+    top: 15%;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; /*puts image all the way to the back*/
+}
+
+h2 {
+    color: #000;
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 70%;
+    
+    font-family: 'Inria Serif';
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 60px;
+   /* transform: translate(-50%, -50%); puts greeting in the middle*/
+}
+
+.content {
+    width: 100%;
+    background: #fff;
+    min-height: 100vh;
+    z-index: 2; /*puts image on top*/
+}
+
+.content-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60vh;
 }
