@@ -105,3 +105,50 @@ h2 {
     align-items: center;
     min-height: 60vh;
 }
+
+
+h3{
+    position:absolute;
+    left:50%;
+}
+
+h4 {
+    position:absolute;
+    left:40%
+}
+
+.icon {
+    position:absolute;
+    left: 50%;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+
+}
+
+.row {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+
+.linkedin {
+    width: 25px;
+    height: 30px;
+}
+
+.github {
+    width: 22px;
+    height: 22.2px;
+}
+
+.gmail{
+    width: 26px;
+    height: 26px;
+}
