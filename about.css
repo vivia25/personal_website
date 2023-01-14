@@ -89,10 +89,31 @@ section {
     flex-grow: 1;
 }
 
-
-h3{
+.work {
     position:absolute;
-    left:50%;
+    left: 70%;
+    top: 40%;
+    height: 200px;
+    width: 200px;
+}
+
+.art {
+
+    position:absolute;
+    left: 70%;
+    top: 85%;
+    height: 200px;
+    width: 130px;
+
+}
+
+.destination{
+    position:absolute;
+    left: 5%;
+    top: 100%;
+    height: 50px;
+    width: 50px;
+
 }
 
 h4 {
@@ -128,4 +149,3 @@ body {
     margin-left:40%;
 
 }
-

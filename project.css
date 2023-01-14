@@ -59,13 +59,18 @@ header ul li a:hover
 }
 
 section{
-    position:absolute;
-    min-height:100vh;
+    position: relative;
+    width: fit-content;
+    margin-top:20%;
+    margin-left: 10%;
+    min-height: 100vh;
+    margin-bottom: -100px;
 
 }
 
-footer{
-    bottom: 0;
+footer, .middle {
+    position: sticky;
+    height: 50px;
 }
 
 .name{
@@ -73,43 +78,56 @@ footer{
     left:50%;
 }
 
+h2 {
+    color: #000;
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 70%;
+    
+    font-family: 'Inria Serif';
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 60px;
+   /* transform: translate(-50%, -50%); puts greeting in the middle*/
+}
+
+
+h3{
+    position:absolute;
+    left:50%;
+}
+
 h4 {
     position:absolute;
-    left:40%;
+    left:40%
 }
 
-.icon {
-    position:absolute;
-    left: 50%;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh;
 }
-
 
 .column {
+  position:relative;
   float: left;
-  width: 33.33%;
+  left: 50%;
   padding: 5px;
 
 }
 
-.row {
+.row::after {
     content: "";
     clear: both;
     display: table;
 
 }
 
+.linkedin, .github, .gmail{
 
-.linkedin {
-    width: 25px;
-    height: 30px;
-}
+    width: 50px;
+    height: 50px;
+    margin-left:40%;
 
-.github {
-    width: 22px;
-    height: 22.2px;
-}
-
-.gmail{
-    width: 26px;
-    height: 26px;
 }

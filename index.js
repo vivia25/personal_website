@@ -1,5 +1,10 @@
-let controller = new ScrollMagic.Conroller();
-let timeline = new TimelineMax();
+let start = Date.now();
 
-timeline
-    .to("h2", 5, { x: 500 })
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        container2.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 2000) clearInterval(timer);
+
+      }, 20);
