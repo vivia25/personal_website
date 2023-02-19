@@ -63,8 +63,21 @@ header ul li a:hover
     margin-top: 20%;
     margin-left: 10%;
     margin-bottom:10%;
+    flex: 1;
     
 }
+
+footer {
+    flex:none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
 
 .name{
     position:absolute;

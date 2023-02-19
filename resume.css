@@ -92,6 +92,32 @@ h2 {
    /* transform: translate(-50%, -50%); puts greeting in the middle*/
 }
 
+section {
+    flex-grow: 1;
+}
+
+.container, .container2{
+
+    background-repeat: no-repeat;
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: cover;
+
+}
+
+.container{
+    background-image:url("nyc.webp");
+    background-size: cover;
+}
+
+.container2{
+    background-image:url("subway.jpg");
+    background-size: contain;
+}
+
+
 
 h3{
     position:absolute;
@@ -100,7 +126,7 @@ h3{
 
 h4 {
     position:absolute;
-    left:40%
+    left:33%;
 }
 
 body {
@@ -112,7 +138,7 @@ body {
 .column {
   position:relative;
   float: left;
-  left: 50%;
+  left: 45%;
   padding: 5px;
 
 }
@@ -128,6 +154,6 @@ body {
 
     width: 50px;
     height: 50px;
-    margin-left:40%;
+    
 
 }

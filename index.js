@@ -1,10 +1,12 @@
-let start = Date.now();
+var i = 0;
+var txt = 'Hello, My name is Vivian Yam.';
+var speed = 50;
 
-      let timer = setInterval(function() {
-        let timePassed = Date.now() - start;
-
-        container2.style.left = timePassed / 5 + 'px';
-
-        if (timePassed > 2000) clearInterval(timer);
-
-      }, 20);
+function typeWriter() 
+{
+  if (i < txt.length) {
+    document.getElementById("greeting").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}

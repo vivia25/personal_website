@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Personal website</title>
+    <link rel="icon" type="image/x-icon" href="Vivian Yam.png">
     <link rel="stylesheet" type="text/css" href="index.css">
 
     <!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
@@ -28,7 +29,21 @@
     </header>
     
     <section> 
-        <h2 class="greeting">Hello, My name is Vivian Yam.</h2>
+        <p id="greeting"></p>
+
+        <script>
+            var i = 0;
+            var txt = 'Hello, My name is Vivian Yam.';
+            var speed = 50;
+            
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("greeting").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+        </script>
         
         <div class="container"> </div>
         
@@ -53,11 +68,6 @@
             
                     
     </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap"> </script>
-    <script src="index.js"></script>
         
         <hr>
 
@@ -100,6 +110,6 @@
         </div>
 
     </footer>
-    
+
 </body>
 </html>
