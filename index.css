@@ -79,22 +79,24 @@ section {
 .container, .container2{
 
     background-repeat: no-repeat;
-    min-height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-repeat: cover;
+    
 
 }
 
 .container{
     background-image:url("nyc.webp");
     background-size: cover;
+    min-height: 600px;
+
 }
 
 .container2{
     background-image:url("subway.jpg");
     background-size: contain;
+    min-height: 300px;
 }
 
 
@@ -106,7 +108,8 @@ h3{
 
 h4 {
     position:absolute;
-    left:50%;
+    left:40%;
+ 
 }
 
 body {
@@ -118,7 +121,7 @@ body {
 .column {
   position:relative;
   float: left;
-  left: 50%;
+  left: 47%;
   padding: 5px;
 
 }
