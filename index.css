@@ -69,9 +69,30 @@ h2 {
     font-weight: 300;
     font-size: 50px;
     line-height: 60px;
-   /* transform: translate(-50%, -50%); puts greeting in the middle*/
 }
 
+.message p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 section {
     flex-grow: 1;
 }
@@ -87,14 +108,14 @@ section {
 }
 
 .container{
-    background-image:url("nyc.webp");
+    background-image:url("img/nyc.webp");
     background-size: cover;
     min-height: 600px;
 
 }
 
 .container2{
-    background-image:url("subway.jpg");
+    background-image:url("img/subway.jpg");
     background-size: contain;
     min-height: 300px;
 }

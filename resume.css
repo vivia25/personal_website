@@ -78,43 +78,9 @@ footer, .middle {
     left:50%;
 }
 
-h2 {
-    color: #000;
-    position: absolute;
-    text-align: center;
-    top: 25%;
-    left: 70%;
-    
-    font-family: 'Inria Serif';
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 60px;
-   /* transform: translate(-50%, -50%); puts greeting in the middle*/
-}
 
 section {
     flex-grow: 1;
-}
-
-.container, .container2{
-
-    background-repeat: no-repeat;
-    min-height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-repeat: cover;
-
-}
-
-.container{
-    background-image:url("nyc.webp");
-    background-size: cover;
-}
-
-.container2{
-    background-image:url("subway.jpg");
-    background-size: contain;
 }
 
 

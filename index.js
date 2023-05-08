@@ -1,12 +1,14 @@
-var i = 0;
-var txt = 'Hello, My name is Vivian Yam.';
-var speed = 50;
+var messageArray = ["\nHey! Welcome to my website.\nMy name is Vivian Yam."];
+var textPosition = 0;
+var speed = 100;
 
-function typeWriter() 
-{
-  if (i < txt.length) {
-    document.getElementById("greeting").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
+typeweriter = () => {
+  document.querySelector ("#message").
+  innterHTML=messageArray[0].substring(0,textPosition) + "<spam>\u25ae</span>";
+
+  if (textPosition++ != messageArray[0].length) {
+    setTimeout(typewriter, speed);
   }
+  
+  window.addEventListener("load", typewriter)
 }
