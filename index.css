@@ -114,12 +114,56 @@ section {
 
 }
 
-.container2{
-    background-image:url("img/subway.jpg");
-    background-size: contain;
-    min-height: 300px;
-}
 
+.about{
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    flex: 1;
+    position: relative; /* add this to make .about a positioned ancestor */
+    float: left;
+  }
+  
+  .pictures {
+    position: absolute;
+    top: 0; /* position images at top of .about */
+    right: 0; /* position images at right of .about */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    width: 50%;
+  }
+
+  .text {
+    width:50%;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+  
+  .work {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 50px;
+    display:block;
+    margin: 0 auto;
+
+
+  }
+  
+  .art {
+    height: 200px;
+    width: 130px;
+    margin-bottom: 50px;
+    display: block;
+    margin: 0 auto;
+    
+
+
+  }
+  
 
 
 h3{
