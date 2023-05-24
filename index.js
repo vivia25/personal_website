@@ -1,14 +1,21 @@
-var messageArray = ["\nHey! Welcome to my website.\nMy name is Vivian Yam."];
-var textPosition = 0;
-var speed = 100;
+let airplane = document.getElementById("airplane");
+let bird = document.getElementById("bird");
+let helicopter = document.getElementById("helicopter");
 
-typeweriter = () => {
-  document.querySelector ("#message").
-  innterHTML=messageArray[0].substring(0,textPosition) + "<spam>\u25ae</span>";
+let rates = {
+  airplane: 0.7,
+  bird: 0.7,
+  helicopter: 0.7
+};
 
-  if (textPosition++ != messageArray[0].length) {
-    setTimeout(typewriter, speed);
-  }
+const handleScroll = () => {
+  let scrollDistance = window.scrollY;
+
+  airplane.style.left = scrollDistance * rates.airplane + 'px';
+  bird.style.left = scrollDistance * rates.bird + 'px';
+  helicopter.style.left= -scrollDistance * rates.helicopter + 'px';
+
   
-  window.addEventListener("load", typewriter)
 }
+
+window.addEventListener('scroll', handleScroll);
