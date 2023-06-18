@@ -1,3 +1,4 @@
+//parallax scrolling animation
 let airplane = document.getElementById("airplane");
 let bird = document.getElementById("bird");
 let helicopter = document.getElementById("helicopter");
@@ -19,3 +20,31 @@ const handleScroll = () => {
 }
 
 window.addEventListener('scroll', handleScroll);
+
+// fade in animation on the about me section
+
+
+let animation = {
+  revealDistance: 150,
+  initialOpacity: 0,
+  trasitionDelay: 0,
+  transitionDuration: '2s',
+  transitionProperty: 'all',
+  transitionTiming: 'ease',
+}
+
+let revealContainers = document.querySelectorAll('.reveal');
+
+const revealItem = () => {
+  for (let i = 0; i < revealContainers.length; i++) {
+    let windowHeight = window.innerHeight;
+    let revealContainerTop = revealContainers[i].getBoundingClientRect().top;
+    if (revealContainerTop < windowHeight - animation.revealDistance) {
+  revealContainers[i].classList.add('active'); 
+} else {
+  revealContainers[i].classList.remove('active');
+    }
+  }
+}
+
+window.addEventListener('scroll', revealItem);

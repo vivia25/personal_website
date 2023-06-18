@@ -118,7 +118,7 @@ h2 {
     line-height: 60px;
 }
 
-
+/*parralax*/
 #section1 {
     height: 800px;
 }
@@ -175,6 +175,18 @@ h2 {
     position: relative; /* add this to make .about a positioned ancestor */
     float: left;
   }
+  
+  .reveal{
+    transform: translateY(5px);
+    opacity: 0;
+    transition: all 7s ease;
+  }
+  
+  .active {
+    opacity: 1;
+    translate: 0px; /*moves item in y direction*/ 
+  }
+  
   
   .pictures {
     position: absolute;
